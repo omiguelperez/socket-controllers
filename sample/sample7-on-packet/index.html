@@ -1,0 +1,14 @@
+<html>
+<script src="../../node_modules/socket.io-client/dist/socket.io.js"></script>
+<script>
+    var socket = io("http://localhost:3001");
+    socket.on("packet_received", function (packet) {
+        console.log("Packet received", packet);
+    });
+</script>
+<body>
+
+Watch console for events.<br/>
+
+</body>
+</html>

@@ -40,6 +40,20 @@ export function OnMessage(name?: string): Function {
 }
 
 /**
+ * Registers controller's action to be executed when client send packet to the socket.
+ */
+export function OnPacket(): Function {
+    return function (object: Object, methodName: string) {
+        const metadata: ActionMetadataArgs = {
+            target: object.constructor,
+            method: methodName,
+            type: ActionTypes.PACKET
+        };
+        defaultMetadataArgsStorage().actions.push(metadata);
+    };
+}
+
+/**
  * Registers controller's action to be executed when client connects to the socket.
  */
 export function OnConnect(): Function {

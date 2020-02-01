@@ -49,3 +49,5 @@ dist
 build
 tmp
 out-tsc
+src/**/*.js
+sample/**/*.js

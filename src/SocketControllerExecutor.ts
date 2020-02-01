@@ -123,6 +123,12 @@ export class SocketControllerExecutor {
                             .then(result => this.handleSuccessResult(result, action, socket))
                             .catch(error => this.handleFailResult(error, action, socket));
                     });
+                } else if (action.type === ActionTypes.PACKET) {
+                    socket.conn.on('packet', (packet: any) => {
+                        this.handleAction(action, {socket: socket, data: packet})
+                            .then(result => this.handleSuccessResult(result, action, socket))
+                            .catch(error => this.handleFailResult(error, action, socket));
+                    });
                 }
             });
         });

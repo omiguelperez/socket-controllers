@@ -35,7 +35,8 @@
   },
   "scripts": {
     "test": "gulp package",
-    "build": "gulp package"
+    "build": "gulp package",
+    "watch": "ts-watch ./sample/sample7-on-packet/app.ts"
   },
   "dependencies": {
     "class-transformer": "^0.1.6",
@@ -56,6 +57,7 @@
     "gulpclass": "^0.1.2",
     "socket.io-client": "^2.0.1",
     "ts-node": "^3.0.4",
+    "ts-watch": "^1.0.8",
     "tslint": "^5.2.0",
     "tslint-stylish": "^2.1.0",
     "typedi": "^0.5.2",
