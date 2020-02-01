@@ -1,7 +1,7 @@
 {
   "name": "socket-controllers",
   "private": true,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Use class-based controllers to handle websocket events",
   "license": "MIT",
   "readmeFilename": "README.md",
@@ -24,6 +24,10 @@
     {
       "name": "Rustam Mamadaminov",
       "email": "rmamdaminov@gmail.com"
+    },
+    {
+      "name": "Oscar Pérez",
+      "email": "mr.omiguelperez@gmail.com"
     }
   ],
   "repository": {

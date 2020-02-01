@@ -30,7 +30,7 @@ Use class-based controllers to handle websocket events. Helps to organize your c
 1. Create a file `MessageController.ts`
 
     ```typescript
-    import {OnConnect, SocketController, ConnectedSocket, OnDisconnect, MessageBody, OnMessage} from "socket-controllers";
+    import {OnConnect, SocketController, ConnectedSocket, OnDisconnect, MessageBody, OnMessage, OnPacket} from "socket-controllers";
 
     @SocketController()
     export class MessageController {
@@ -51,6 +51,12 @@ Use class-based controllers to handle websocket events. Helps to organize your c
             console.log("setting id to the message and sending it back to the client");
             message.id = 1;
             socket.emit("message_saved", message);
+        }
+
+        @OnPacket()
+        packet(@ConnectedSocket() socket: any, @MessageBody() packet: any) {
+            console.log("received packet");
+            console.log("content", packet);  // { type: 'ping' }
         }
     
     }
