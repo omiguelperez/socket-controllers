@@ -35,10 +35,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/pleerock/socket-controllers.git"
+    "url": "https://github.com/omiguelperez/socket.io-ts-controllers.git"
   },
   "bugs": {
-    "url": "https://github.com/pleerock/socket-controllers/issues"
+    "url": "https://github.com/omiguelperez/socket.io-ts-controllers/issues"
   },
   "scripts": {
     "test": "gulp package",
