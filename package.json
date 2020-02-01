@@ -1,6 +1,6 @@
 {
   "name": "socket.io-ts-event-controllers",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Use class-based controllers to handle websocket events",
   "license": "MIT",
   "readmeFilename": "README.md",
@@ -15,9 +15,10 @@
     "socket.io",
     "socket-server",
     "socket.io-ts",
-    "socketio-ts-controllers",
+    "socket.io-ts-event-controllers",
     "socketio-typescript",
-    "socketio-typescript-controllers"
+    "socketio-typescript-controllers",
+    "socket.io-ts-event-controllers"
   ],
   "author": {
     "name": "Umed Khudoiberdiev",
@@ -35,10 +36,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/omiguelperez/socketio-ts-controllers.git"
+    "url": "https://github.com/omiguelperez/socket.io-ts-event-controllers.git"
   },
   "bugs": {
-    "url": "https://github.com/omiguelperez/socketio-ts-controllers/issues"
+    "url": "https://github.com/omiguelperez/socket.io-ts-event-controllers/issues"
   },
   "scripts": {
     "test": "gulp package",
