@@ -36,7 +36,7 @@
   "scripts": {
     "test": "gulp package",
     "build": "gulp package",
-    "watch": "ts-watch ./sample/sample7-on-packet/app.ts"
+    "sample7": "cross-env DEBUG=* ts-node ./sample/sample7-on-packet/app.ts"
   },
   "dependencies": {
     "class-transformer": "^0.1.6",
@@ -46,6 +46,7 @@
   },
   "devDependencies": {
     "@types/node": "^7.0.18",
+    "cross-env": "^7.0.0",
     "del": "^2.2.2",
     "express": "^4.15.2",
     "gulp": "^3.9.1",
@@ -57,7 +58,6 @@
     "gulpclass": "^0.1.2",
     "socket.io-client": "^2.0.1",
     "ts-node": "^3.0.4",
-    "ts-watch": "^1.0.8",
     "tslint": "^5.2.0",
     "tslint-stylish": "^2.1.0",
     "typedi": "^0.5.2",
