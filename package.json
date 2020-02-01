@@ -1,5 +1,5 @@
 {
-  "name": "socketio-ts-controllers",
+  "name": "socket.io-ts-event-controllers",
   "version": "0.0.11",
   "description": "Use class-based controllers to handle websocket events",
   "license": "MIT",
