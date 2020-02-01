@@ -1,5 +1,5 @@
 {
-  "name": "socket-controllers",
+  "name": "socket.io-ts-controllers",
   "private": true,
   "version": "0.0.6",
   "description": "Use class-based controllers to handle websocket events",
@@ -14,7 +14,11 @@
     "typescript-websockets",
     "socket-controllers",
     "socket.io",
-    "socket-server"
+    "socket-server",
+    "socket.io-ts",
+    "socket.io-ts-controllers",
+    "socket.io-typescript",
+    "socket.io-typescript-controllers"
   ],
   "author": {
     "name": "Umed Khudoiberdiev",
