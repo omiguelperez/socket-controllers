@@ -43,6 +43,12 @@
   "scripts": {
     "test": "gulp package",
     "build": "gulp package",
+    "sample1": "cross-env DEBUG=* ts-node ./sample/sample1-simple-controllert/app.ts",
+    "sample2": "cross-env DEBUG=* ts-node ./sample/sample2-use-created-socket-io/app.ts",
+    "sample3": "cross-env DEBUG=* ts-node ./sample/sample3-namespaces/app.ts",
+    "sample4": "cross-env DEBUG=* ts-node ./sample/sample4-emitters/app.ts",
+    "sample5": "cross-env DEBUG=* ts-node ./sample/sample5-middlewares/app.ts",
+    "sample6": "cross-env DEBUG=* ts-node ./sample/sample6-dynamic-namespaces/app.ts",
     "sample7": "cross-env DEBUG=* ts-node ./sample/sample7-on-packet/app.ts"
   },
   "dependencies": {
