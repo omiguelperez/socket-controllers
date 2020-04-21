@@ -1,6 +1,6 @@
 {
   "name": "socket.io-controllers-ts",
-  "version": "0.0.23",
+  "version": "0.0.26",
   "description": "Use class-based controllers to handle websocket events",
   "license": "MIT",
   "readmeFilename": "README.md",
