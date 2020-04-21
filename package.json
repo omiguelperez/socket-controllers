@@ -1,6 +1,6 @@
 {
   "name": "socket.io-controllers-ts",
-  "version": "0.0.18",
+  "version": "0.0.23",
   "description": "Use class-based controllers to handle websocket events",
   "license": "MIT",
   "readmeFilename": "README.md",
@@ -41,7 +41,6 @@
     "url": "https://github.com/omiguelperez/socket.io-ts-controllers/issues"
   },
   "scripts": {
-    "test": "gulp package",
     "build": "gulp package",
     "sample1": "cross-env DEBUG=* ts-node ./sample/sample1-simple-controllert/app.ts",
     "sample2": "cross-env DEBUG=* ts-node ./sample/sample2-use-created-socket-io/app.ts",
