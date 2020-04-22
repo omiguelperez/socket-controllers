@@ -6,6 +6,7 @@ import {ParamMetadata} from "./metadata/ParamMetadata";
 import {ParameterParseJsonError} from "./error/ParameterParseJsonError";
 import {ParamTypes} from "./metadata/types/ParamTypes";
 import {ControllerMetadata} from "./metadata/ControllerMetadata";
+import isJSON from "./util/is-valid-json";
 import * as pathToRegexp from "path-to-regexp";
 
 /**
@@ -222,7 +223,7 @@ export class SocketControllerExecutor {
 
     private parseParamValue(value: any, paramMetadata: ParamMetadata) {
         try {
-            const parseValue = typeof value !== "string" ? JSON.parse(value) : value;
+            const parseValue = typeof value === "string" && isJSON(value) ? JSON.parse(value) : value;
             if (paramMetadata.reflectedType !== Object && paramMetadata.reflectedType && this.useClassTransformer) {
                 const options = paramMetadata.classTransformOptions || this.plainToClassTransformOptions;
                 return plainToClass(paramMetadata.reflectedType, parseValue, options);
